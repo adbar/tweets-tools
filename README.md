@@ -9,6 +9,8 @@ So far, two files are provided for indexation with [ElasticSearch](https://www.e
 * a mapping for the database entries
 * a Python script selecting relevant elements and feeding them to the database
 
+For more information see my blog post [Tips and tricks for indexing text with ElasticSearch](http://adrien.barbaresi.eu/blog/tips-indexation-elasticsearch.html).
+
 
 ### Reference
 
