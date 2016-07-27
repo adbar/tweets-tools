@@ -1,0 +1,185 @@
+{
+    "tweet": {
+        "properties" : {
+            "coordinates": {
+                "properties": {
+                    "coordinates": {
+                        "type": "geo_point",
+                        "lat_lon": true,
+                        "geohash": true
+                    },
+                    "type": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    }
+                }
+            },
+            "created_at" : {
+                "format": "EEE MMM dd HH:mm:ss Z YYYY",
+                "type" : "date"
+            },
+            "favorite_count" : {
+                "type" : "integer"
+            },
+            "favorited": {
+                "type": "boolean"
+            },
+            "geo": {
+                "properties": {
+                    "coordinates": {
+                        "type": "geo_point",
+                        "lat_lon": true,
+                        "geohash": true
+                    },
+                    "type": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    }
+                }
+            },
+            "id" : {
+                "type" : "long"
+            },
+            "in_reply_to_screen_name" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+            },
+            "lang" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+            },
+            "place": {
+                "properties": {
+                    "attributes": {
+                        "type": "object"
+                    },
+                    "country": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    },
+                    "country_code": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    },
+                    "full_name": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    },
+                    "id": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    },
+                    "name": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    },
+                    "place_type": {
+                        "index": "not_analyzed",
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                }
+            },
+            "possibly_sensitive": {
+                "type": "boolean"
+            },
+            "retweet_count": {
+                "type": "integer"
+            },
+            "retweeted": {
+                "type": "boolean"
+            },
+            "screen_name" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+            },
+            "source": {
+                "type" : "string",
+                "index" : "not_analyzed"
+            },
+            "text" : {
+                "type" : "string",
+                "index" : "analyzed",
+                "analyzer" : "german"
+            },
+            "truncated": {
+                "type": "boolean"
+            },
+            "user": {
+                "properties": {
+                    "contributors_enabled": {
+                        "type": "boolean"
+                    },
+                    "created_at": {
+                        "format": "EEE MMM dd HH:mm:ss Z YYYY",
+                        "type": "date"
+                    },
+                    "default_profile": {
+                        "type": "boolean"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "favourites_count": {
+                        "type": "integer"
+                    },
+                    "followers_count": {
+                        "type": "integer"
+                    },
+                    "friends_count": {
+                        "type": "integer"
+                    },
+                    "geo_enabled": {
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "type": "long"
+                    },
+                    "is_translator": {
+                        "type": "boolean"
+                    },
+                    "lang": {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                    },
+                    "listed_count": {
+                        "type": "integer"
+                    },
+                    "location": {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "protected": {
+                        "type": "boolean"
+                    },
+                    "screen_name": {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                    },
+                    "statuses_count": {
+                        "type": "integer"
+                    },
+                    "time_zone": {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                    },
+                    "url": {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                    },
+                    "utc_offset": {
+                        "type": "integer"
+                    },
+                    "verified": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}
